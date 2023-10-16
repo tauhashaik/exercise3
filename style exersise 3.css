@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+:root{
+    --favourite1:rgb(156,76,85) ;
+    --favourite2: rgb(250,120,43) ;
+    --favourite3: rgb(23,250,89) ;
+}
+body {
+    background-color: aqua;
+}
+h1,h2,h3 {
+font-family: 'Times New Roman', Times, serif;
+font-style: italic;
+}
+
+p {
+    color: red;
+}
+
+img{
+    width: auto;
+}
+
+.nav { 
+    display: inline-block;
+}
+
+.butt{
+    border: 2px solid blue;
+}
+
+@media screen and(max-width:412px) {
+    body{
+        background-color: var(--favourite3);
+    }
+}
+@media screen and(min-width:1280px) {
+    body{
+        background-color: var(--favourite2);
+    }
+}
+@media screen and(min-width:1024) {
+    body{
+        background-color: var(--favourite1);
+    }
+}
